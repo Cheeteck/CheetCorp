@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CheetCorp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #080f13;
+      color: white;
+    }
+    header {
+      background-color: #0d1a20;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #121f26;
+      min-width: 200px;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      color: white;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover {
+      background-color: #1a2e38;
+    }
+    main {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .link-list a {
+      display: block;
+      margin: 12px 0;
+      color: #00b3ff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .link-list a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0d1a20;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CheetCorp</h1>
+    <nav>
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <a href="#">Projects ▾</a>
+       <div class="dropdown-content">
+  <a href="create-schematics.html">Create Schematics</a>
+  <a href="usable-dragon-eggs.html">Usable Dragon Eggs</a>
+  <a href="jacp.html">JACP</a>
+  <a href="schemswap.html">SchemSwap</a>
+  <a href="yfas.html">YFAS</a>
+</div>
+      </div>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to CheetCorp</h2>
+    <div class="link-list">
+      <a href="https://linktr.ee/Cheeteck" target="_blank">➜ Linktree</a>
+      <a href="https://discord.gg/ypDpme75NA" target="_blank">➜ The Cheetah Paradise Discord</a>
+      <a href="https://youtube.com/@cheeteck" target="_blank">➜ YouTube</a>
+      <a href="https://twitter.com/cheeteck_" target="_blank">➜ Twitter</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Cheeteck™ Corporation. All rights reserved
+  </footer>
+
+</body>
+</html>
